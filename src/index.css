@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+*{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +10,86 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  grid-auto-rows: minmax(50px, auto);
+ }
+ .heads{
+  text-align: center;
+  margin-bottom: 14px;
+  margin-top: 15px;
+ }
+ .main{
+   margin: auto;
+   margin-left: 60px;
+   margin-top: 40px;
+   margin-bottom: 10px;
+ }
+ .exercise-card{
+  border: 2px solid black;
+   border-radius: 7px;
+   width: 200px;
+   height: 220px;
+   text-align: center;
+ }
+ .original-img{
+  width: 190px;
+  height: 150px;
+ }
+.form-control{
+  width:500px
+}
+.search-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: sticky;
+  top: 5px;
+}
+
+.main-2{
+  margin: auto;
+  margin-left: 25px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.grid-2{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  grid-auto-rows: minmax(50px, auto);
+}
+
+.exercise-card-2{
+  border: 2px solid rgb(10, 105, 214);
+  border-radius: 9px;
+  text-align: center;
+  color:rgb(198, 85, 235)
+}
+.img-exercise{
+  width: 200px;
+  height: 120px;
+}
+.heading{
+  text-align: center;
+}
+.exercise-card-2:hover{
+  border:2px solid greenyellow;
+  cursor: pointer;
+}
+#search-btn{
+  margin-left: 5px;
 }
